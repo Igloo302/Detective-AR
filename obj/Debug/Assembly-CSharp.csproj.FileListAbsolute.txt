@@ -1,0 +1,2 @@
+/Users/igloo/Desktop/ARkit/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/igloo/Desktop/ARkit/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

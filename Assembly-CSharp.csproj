@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{F2106B9A-227F-A4C4-4E6C-FB717F9B0F0A}</ProjectGuid>
+    <ProjectGuid>{8D3815FD-E8BE-4618-337F-C55D0E33AA8D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,58 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
+    <Compile Include="Assets\_Component\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
+    <Compile Include="Assets\_Component\Simple UI\Samples\IconPreview.cs" />
+    <Compile Include="Assets\_Script\GamerController.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanCameraMove.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanCameraZoom.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanCanvasArrow.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanDestroy.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanFingerDown.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanFingerHeld.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanFingerLine.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanFingerSet.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanFingerSwipe.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanFingerTap.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanFingerTrail.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanFingerUp.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanOpenUrl.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanPath.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanPlane.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanRotate.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanRotateCustomAxis.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanScale.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanScreenDepth.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanSelect.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanSelectable.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanSelectableBehaviour.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanSelectableGraphicColor.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanSelectableRendererColor.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanSelectableSpriteRendererColor.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanSpawnAt.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanTouchEvents.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Examples\Scripts\LeanTranslate.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Scripts\LeanFinger.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Scripts\LeanGesture.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Scripts\LeanSnapshot.cs" />
+    <Compile Include="Assets\_Script\LeanTouch\Scripts\LeanTouch.cs" />
+    <Compile Include="Assets\_Script\ReadingDone.cs" />
+    <Compile Include="Assets\_Script\ShootingScript.cs" />
+    <Compile Include="Assets\_Script\StartGame.cs" />
+    <Compile Include="Assets\LeanRotateY.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitFaceTrackingRemoteConnection.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\CompressionHelper.cs" />
@@ -171,26 +223,47 @@
     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARWorldMap.cs" />
     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
     <Compile Include="Assets\UnityARKitPlugin\UnityARKitPluginSettings.cs" />
+    <None Include="Assets\_Script\LeanTouch\Examples\Fonts\OFL.txt" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\_Script\LeanTouch\Examples\Shaders\Skybox.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\!WarFX Readme.txt" />
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
+    <None Include="Assets\_Component\Simple UI\Fonts\OFL.txt" />
+    <None Include="Assets\_Script\LeanTouch\Examples\Shaders\Smooth.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\_Component\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\_Component\JMO Assets\!JMO Assets Readme.txt" />
     <None Include="Assets\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
     <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShaderLinear.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
+    <None Include="Assets\_Component\HQ_ResidentialHouse\Shaders\MaskedPBR.shader" />
     <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
+    <None Include="Assets\_Component\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
     <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -394,19 +467,19 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/igloo/Desktop/Detective-AR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/igloo/Desktop/ARkit/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

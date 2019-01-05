@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/UnityARKitScene.unity
+    path: Assets/_Scene/Home.unity
+    guid: 2d76ce7ef09364c3a8ba50cb01d8da35
+  - enabled: 1
+    path: Assets/_Scene/Story.unity
+    guid: b26669f1c2ae448bfa0e2d4f3cde9b71
+  - enabled: 1
+    path: Assets/_Scene/UnityARKitScene.unity
     guid: c159f2591a9b5c843b0a0442451f78f8
   - enabled: 0
     path: Assets/UnityARKitPlugin/Examples/UnityParticlePainter/UnityParticlePainter.unity
