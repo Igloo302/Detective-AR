@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GamerController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class GamerController : MonoBehaviour
     public GameObject ingameStory;
 
     public GameObject ingameAchi;
+
+    public GameObject ingameGuide;
 
     // Start is called before the first frame update
     void Start()
@@ -66,5 +69,18 @@ public class GamerController : MonoBehaviour
     public void OnCloseAchi()
     {
         ingameAchi.SetActive(false);
+    }
+
+
+    public void OnCloseGuide()
+    {
+        ingameGuide.SetActive(false);
+
+
+    }
+
+    public void FinishSearch()
+    {
+        SceneManager.LoadScene("Result");
     }
 }

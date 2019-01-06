@@ -38,8 +38,7 @@ public class ShootingScript : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
                 case "USB":
                     evidenceTitleText.text = "U盘";
@@ -48,7 +47,7 @@ public class ShootingScript : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go1 = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
                 case "NPC1":
                     evidenceTitleText.text = "路人甲";
@@ -57,7 +56,7 @@ public class ShootingScript : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go2 = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
                 case "NPC2":
                     evidenceTitleText.text = "路人乙";
@@ -66,16 +65,16 @@ public class ShootingScript : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go3 = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
-                case "Npc3":
-                    evidenceTitleText.text = "路人丙";
-                    evidenceText.text = "路人丙：医院所有维修单上，签名的都是撒保安。";
+                case "bin":
+                    evidenceTitleText.text = "垃圾桶";
+                    evidenceText.text = "垃圾桶里面发现一张带血的纸条，上面字看不清";
                     //destory the evidence
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go4 = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
                 case "potion":
                     evidenceTitleText.text = "电梯里的一针就死";
@@ -84,7 +83,7 @@ public class ShootingScript : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go5 = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
                 case "HBG":
                     evidenceTitleText.text = "韩八卦的口袋";
@@ -93,25 +92,25 @@ public class ShootingScript : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go6= Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
-                case "handrail":
-                    evidenceTitleText.text = "栏杆失修";
-                    evidenceText.text = "八卦记者的笔记本中夹了一张纸条，上面写着栏杆失修，不要靠近。";
+                case "pile":
+                    evidenceTitleText.text = "楼梯失修";
+                    evidenceText.text = "楼梯间发现一堆碎木头，楼梯年久失修";
                     //destory the evidence
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject g7 = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
-                case "syringe2":
-                    evidenceTitleText.text = "凌办公室的一针就死";
-                    evidenceText.text = "凌主任办公室内发现一支带有“一针就死”毒药的针管。";
+                case "TBag":
+                    evidenceTitleText.text = "垃圾袋里的一针就死";
+                    evidenceText.text = "垃圾袋里发现一支带有“一针就死”毒药的针管。";
                     //destory the evidence
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go8 = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
                 case "camera":
                     evidenceTitleText.text = "摄像头";
@@ -120,7 +119,7 @@ public class ShootingScript : MonoBehaviour
                     Destroy(hit.transform.gameObject);
                     //show exposion animation
                     GameObject go9 = Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
-                    evidence.SetActive(true);
+                    StartCoroutine(WaitToShow(1f));
                     break;
                 default:
                     break;
@@ -137,4 +136,12 @@ public class ShootingScript : MonoBehaviour
     //    GameObject go = Instantiate(explosion, dispear.point, Quaternion.LookRotation(dispear.normal));
     //    evidence.SetActive(true);
     //}
+
+    IEnumerator WaitToShow(float t)
+    {
+        yield return new WaitForSeconds(t);//运行到这，暂停t秒
+
+        //t秒后，继续运行下面代码
+        evidence.SetActive(true);
+    }
 }

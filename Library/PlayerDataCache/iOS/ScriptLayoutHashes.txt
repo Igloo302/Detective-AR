@@ -1,10 +1,11 @@
 iOS
 PlayerPath?
-/Volumes/Data/Downloads/ARKITTEST
+/Users/igloo/Downloads/test
 SceneListBegin?
 Assets/_Scene/Home.unity
 Assets/_Scene/Story.unity
 Assets/_Scene/UnityARKitScene.unity
+Assets/_Scene/Result.unity
 SceneListEnd?
 8b2d4e06e046ec1dc0a99d91bec0c17a Assembly-CSharp.dll:.WFX_Demo
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:UnityEngine.XR.iOS.UnityARKitControl
@@ -33,7 +34,6 @@ d7b69002bdb682973c1b2cb50c04402f Assembly-CSharp.dll:Lean.Touch.LeanFingerLine
 946ba6d4a5bcec9d6a0f4f14b020563d Assembly-CSharp.dll:.IconPreview
 b1ade44af0b799e9cf2951d561f3fd46 Assembly-CSharp.dll:.ColorPickerTester
 bddc9835509ee6b7a4ac8db532673c7f Assembly-CSharp.dll:.GenerateObjectAnchor
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.LeanRotateY
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Editor.Placeholder
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -250,7 +250,7 @@ bf7611f578cc4391f4c42d7d2643311c Assembly-CSharp.dll:UnityEngine.XR.iOS.EditorHi
 4aac268d7e435f7a65add91aaba819a4 Assembly-CSharp.dll:.WFX_Demo_RandomDir
 fea2d676bca3c708f6b399119fa3ca3f Assembly-CSharp.dll:.UnityARUserAnchorExample
 acd6e9b47d9eb18143f0e406b1e68787 Assembly-CSharp.dll:.ParticlePainter
-0590bbb6b70bd8f892730171c3adcac5 Assembly-CSharp.dll:.GamerController
+7aad714070ae4818ac6bb40b7b0e71e1 Assembly-CSharp.dll:.GamerController
 660deb0ce569359218f0ba85b7ce0e3a Assembly-CSharp.dll:.CFX_LightIntensityFade
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 efee04fd7a8b900e85d693e88d5b5f35 Assembly-CSharp.dll:.ColorPicker
@@ -300,6 +300,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 fcf8670fcab5e098ab49f7a9d975506e Assembly-CSharp.dll:.HitCreateEnvironmentProbe
 e483bf600be1c0c43c778f81975cd000 Assembly-CSharp.dll:.HexColorField
+d59b60710c714a4c09e8cd627cfcc70c Assembly-CSharp.dll:.GuessTheBad
 030fa9a1b46f7f2e0f99470d7d28ce64 Assembly-CSharp.dll:.FaceTrackingVideoFormatsExample
 344c74b3abf2e69061c6763dbfbabcea Assembly-CSharp.dll:.FocusSquare
 0e78074dc9982c5b5d2c5e112a658d35 Assembly-CSharp.dll:Lean.Touch.LeanScale

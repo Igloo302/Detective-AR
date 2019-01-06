@@ -22,4 +22,9 @@ public class ReadingDone : MonoBehaviour
     {
         SceneManager.LoadScene("UnityARKitScene");
     }
+
+    public void BackToHome()
+    {
+        SceneManager.LoadScene("Home");
+    }
 }
